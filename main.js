@@ -22,7 +22,7 @@ renderer.render( scene, camera );
 
 
 const geometry = new THREE.SphereGeometry( 3, 32, 32, 24 )
-const texture = new THREE.TextureLoader().load( "images/sun.webp" );
+const texture = new THREE.TextureLoader().load( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRIzecF3tll7Zv4Ol8jhbrl3a7Ohh8bONrJm0DRNSIeZ_ZbRX-LNlyrpD4WlwsNUg-lNc&usqp=CAU" );
 const material = new THREE.MeshStandardMaterial( {color: 0xff6347, map: texture });
 const torus = new THREE.Mesh( geometry, material);
 torus.scale.set(5, 5, 5);
