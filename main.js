@@ -92,8 +92,7 @@ venus.position.z = 60;
 venus.position.x = 25;
 
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
-scene.background = spaceTexture;
+
 
 
 const pointLight = new THREE.PointLight(0xffffff);
@@ -103,11 +102,10 @@ pointLight.position.set(20,20,20);
 const lightHelper = new THREE.PointLightHelper(pointLight);
 scene.add(lightHelper);
 
-const light = new THREE.AmbientLight( 0x404040 ); // soft white light
-scene.add( light )
-
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight,ambientLight);
+
+
 
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -117,13 +115,13 @@ function addStar() {
   const material = new THREE.MeshStandardMaterial( {color: 0xffffff })
   const star = new THREE.Mesh( geometry, material );
 
-  const [x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread( 100 ) );
+  const [x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread( 250 ) );
 
   star.position.set(x, y, z);
   scene.add(star)
 }
 
-Array(500).fill().forEach(addStar)
+Array(2000).fill().forEach(addStar)
 
 
 function moveCamera() {
