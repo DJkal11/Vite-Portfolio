@@ -22,7 +22,7 @@ renderer.render( scene, camera );
 
 
 const geometry = new THREE.SphereGeometry( 3, 32, 32, 24 )
-const texture = new THREE.TextureLoader().load( "sun.webp" );
+const texture = new THREE.TextureLoader().load( "images/sun.webp" );
 const material = new THREE.MeshStandardMaterial( {color: 0xff6347, map: texture });
 const torus = new THREE.Mesh( geometry, material);
 torus.scale.set(5, 5, 5);
@@ -31,7 +31,7 @@ torus.position.set(0, 0, -20);
 
 
 //mercury
- const mercuryTexture = new THREE.TextureLoader().load("mercurymap.jpg");
+ const mercuryTexture = new THREE.TextureLoader().load("images/mercurymap.jpg");
 
  const mercury = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -44,7 +44,7 @@ torus.position.set(0, 0, -20);
 
  //venus
 
-const venusTexture = new THREE.TextureLoader().load("venusmap.jpg");
+const venusTexture = new THREE.TextureLoader().load("images/venusmap.jpg");
 
 const venus = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -56,7 +56,7 @@ scene.add(venus)
 
 
 //earth
-const earthTexture = new THREE.TextureLoader().load("Earth2.jpeg");
+const earthTexture = new THREE.TextureLoader().load("images/Earth2.jpeg");
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -68,7 +68,7 @@ scene.add(earth)
 
 
 //moon
-const moonTexture = new THREE.TextureLoader().load("moon-light.jpeg");
+const moonTexture = new THREE.TextureLoader().load("images/moon-light.jpeg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(0.7, 32, 32),
