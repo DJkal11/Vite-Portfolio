@@ -99,7 +99,7 @@ scene.add(earth)
 
 
 //moon
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
+const moonTexture = new THREE.TextureLoader().load("moon-light.jpeg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(0.7, 32, 32),
