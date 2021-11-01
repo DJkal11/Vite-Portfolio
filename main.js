@@ -31,7 +31,7 @@ torus.position.set(0, 0, -20);
 
 
 //mercury
- const mercuryTexture = new THREE.TextureLoader().load("images/mercurymap.jpg");
+ const mercuryTexture = new THREE.TextureLoader().load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2uMbFMza87PLk1QzUt4dgTeKzro09u82L71UstJy6yZfOXbU0WJfdeRA-zmKZba3JLuE&usqp=CAU")
 
  const mercury = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -44,7 +44,7 @@ torus.position.set(0, 0, -20);
 
  //venus
 
-const venusTexture = new THREE.TextureLoader().load("images/venusmap.jpg");
+const venusTexture = new THREE.TextureLoader().load("https://lh3.googleusercontent.com/proxy/hVOzCKgA7uNUOzbbEs2wbl6pvghHyRma7pN_FUdCmVO318Cy72rfUWBNukENBeTJ66_bplDHc1cKKjUjc3DvU67M8G6DhlMgZiGSnw");
 
 const venus = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -56,7 +56,7 @@ scene.add(venus)
 
 
 //earth
-const earthTexture = new THREE.TextureLoader().load("images/Earth2.jpeg");
+const earthTexture = new THREE.TextureLoader().load("https://supernova.eso.org/static/archives/exhibitionimages/screen/Earth_30k-with-clouds-CC.jpg");
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -66,9 +66,8 @@ const earth = new THREE.Mesh(
 )
 scene.add(earth)
 
-
 //moon
-const moonTexture = new THREE.TextureLoader().load("images/moon-light.jpeg");
+const moonTexture = new THREE.TextureLoader().load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMakSbKZ0f2FL3n4pg6gNQuFV7tdPNvBsI09Q_yEFkBDbCTSD42FzYZZg1Q-prW9U0dR4&usqp=CAU");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(0.7, 32, 32),
@@ -90,8 +89,6 @@ mercury.position.x = -1;
 
 venus.position.z = 60;
 venus.position.x = 25;
-
-
 
 
 
@@ -165,6 +162,5 @@ function animate(){
 }
 
 animate();
-
 
 
