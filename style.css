@@ -1,0 +1,147 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: 100vw;
+  color: rgb(19, 19, 19);
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+
+}
+
+.title{
+  font-size: 5rem;
+}
+
+ h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-item{
+  color: black;
+}
+
+.about{
+  
+  opacity: 0.9;
+  color: rgb(255, 255, 255);
+}
+
+
+.heading {
+  
+  background-color: #282F44;
+  font-size: 2rem;
+  padding: 14rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+section {
+  padding: 13rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+.light{
+  background-color: #E6AF2E;
+  
+  
+}
+
+
+
+.project{
+  color: white;
+}
+
+.project-item{
+  color: black;
+  margin: 10px;
+}
+
+.left{
+  
+  color: rgb(255, 255, 255);
+}
+
+.icons{
+  font-size: 6rem;
+}
+
+.icon-item:hover {
+  color: rgb(255, 238, 0);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  padding-bottom: 7rem;
+}
+
+.project{
+  color: rgb(255, 255, 255);
+}
+
+.contact-item {
+  margin-top: 0px;
+  padding-top: 80px;
+  
+}
+
+a{
+  text-decoration: none;
+  color:  white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: rgb(255, 238, 0)
+  
+}
+
+.weather{
+  margin-top: 20px;
+  padding-bottom: 24px;
+}
+
+.chat{
+  padding-bottom: 10px;
+}
