@@ -12,17 +12,7 @@ const renderer = new THREE.WebGL1Renderer({
   canvas: document.querySelector("#bg"),
 });
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
-scene.background = spaceTexture;
 
-const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(20,20,20)
-
-const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add(pointLight,ambientLight)
-
-const lightHelper = new THREE.PointLightHelper(pointLight)
-scene.add(lightHelper)
 
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -39,7 +29,17 @@ scene.add(torus)
 torus.position.set(0, 0, -20);
 
 
+const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+scene.background = spaceTexture;
 
+const pointLight = new THREE.PointLight(0xffffff);
+pointLight.position.set(20,20,20);
+
+const ambientLight = new THREE.AmbientLight(0xffffff);
+scene.add(pointLight,ambientLight);
+
+const lightHelper = new THREE.PointLightHelper(pointLight);
+scene.add(lightHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 //stars
