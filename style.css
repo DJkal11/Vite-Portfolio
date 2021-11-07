@@ -18,8 +18,11 @@ main {
 
 }
 
+
+
 .title{
-  font-size: 5rem;
+  font-size: 4rem;
+  
 }
 
  h2, h3, blockquote {
@@ -44,15 +47,27 @@ canvas {
   color: rgb(255, 255, 255);
 }
 
+.intro{
+  background-color: #414141;
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 500px;
+  padding: 100px;
+  box-shadow: -5px -2px 22px 11px rgba(67,65,65,0.77);
+-webkit-box-shadow: -5px -2px 22px 11px rgba(67,65,65,0.77);
+-moz-box-shadow: -5px -2px 22px 11px rgba(67,65,65,0.77);
+}
 
 .heading {
-  background-image: url("images/lucian-dev.png");
-  background-size: contain;
-  background-color: #282F44;
+  
+  background-color: #E6AF2E;
   font-size: 2rem;
-  padding: 22.9rem;
+  padding: 10rem;
   text-align: center;
   color: rgb(255, 255, 255);
+  height: 100vh;
+ 
 }
 
 .lead {
